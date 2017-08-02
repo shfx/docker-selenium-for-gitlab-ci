@@ -7,7 +7,7 @@ RUN sudo apt-get install -y software-properties-common curl
 RUN sudo add-apt-repository -y ppa:fkrull/deadsnakes
 
 RUN sudo apt-get update
-RUN sudo apt-get install -y python2.7
+RUN sudo apt-get install -y python2.7 python-pip
 
 COPY wait-untill-selenium-ready.sh /opt/bin/wait-untill-selenium-ready.sh
 

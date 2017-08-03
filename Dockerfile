@@ -3,7 +3,8 @@ FROM selenium/standalone-chrome
 ENV version 2.7.13
 
 RUN sudo apt-get update
-RUN sudo apt-get install -y software-properties-common curl
+RUN sudo apt-get install -y software-properties-common curl xvfb
+
 RUN sudo add-apt-repository -y ppa:fkrull/deadsnakes
 
 RUN sudo apt-get update

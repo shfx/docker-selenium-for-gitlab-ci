@@ -14,4 +14,4 @@ COPY wait-untill-selenium-ready.sh /opt/bin/wait-untill-selenium-ready
 COPY run-selenium.sh /opt/bin/run-selenium
 
 CMD /opt/bin/entry_point.sh &> /dev/null & \
-    /opt/bin/wait-untill-selenium-ready.sh
+    /opt/bin/wait-untill-selenium-ready
